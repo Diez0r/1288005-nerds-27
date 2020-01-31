@@ -8,14 +8,14 @@
 <header>
   <nav>
     <a>
-      <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип">
+      <img src="img/nerds-logo.svg" width="160" height="65" alt="Нёрдс">
     </a>
     <ul>
       <li><a href="#">Студия</a></li>
       <li><a href="#">Клиенты</a></li>
       <li><a href="catalog.html">Магазин</a></li>
       <li><a href="#">Контакты</a></li>
-      <li><img src="img/basket-icon.svg" width="15" height="15" alt="Картинка корзины"><a href="#">Корзина</a></li>
+      <li><a href="#"><img src="img/basket-icon.svg" width="15" height="15" alt="Картинка корзины">Корзина</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +46,7 @@
       </div>
     </div>
   </section>
-  <h2>Веб-студия "Нёрдс"</h2>
+  <h2 class="visually-hidden">Веб-студия "Нёрдс"</h2>
     <section>
       <ul>
         <li><img src="img/advantage-picture-red.png" width="300" height="146" alt="Веб-сайты">
@@ -120,11 +120,29 @@
 
 <section>
   <h2>Напишите нам!</h2>
-  <p>Ваше имя:</p>
-  <p>Ваш e-mail:</p>
-  <p>Текст письма</p>
-  <!--- ТУТ БУДЕТ ФОРМА --->
-  <button type="submit">Отправить</button>
+  <form method="post" action="https://echo.htmlacademy.ru">
+    <p>
+      <label for="user-name">Ваше имя:</label>
+    </p>
+    <p>
+      <input type="text" id="user-name"
+      name="field_name" placeholder="Имя Фамилия">
+    </p>
+    <p>
+      <label for="user-email">Ваш e-mail:</label>
+    </p>
+    <p>
+      <input type="email" id="user-email"
+      name="field_email" placeholder="email@example.com">
+    </p>
+    <p>
+      <label for="user-letter">Текст письма:</label>
+    </p>
+    <textarea id="user-letter" name="field_letter" placeholder="В свободной форме"></textarea>
+    <p>
+      <button type="submit">Отправить</button>
+    </p>
+  </form>
 </section>
   </body>
 </html>

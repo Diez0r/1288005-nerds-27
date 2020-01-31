@@ -8,114 +8,139 @@
 <header>
   <nav>
     <a href="index.html">
-      <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип">
+      <img src="img/nerds-logo.svg" width="160" height="65" alt="Нёрдс">
     </a>
     <ul>
       <li><a href="#">Студия</a></li>
       <li><a href="#">Клиенты</a></li>
       <li><a href="catalog.html">Магазин</a></li>
       <li><a href="#">Контакты</a></li>
-      <li><img src="img/basket-icon.svg" width="15" height="15" alt="Картинка корзины"><a href="#">Корзина</a></li>
+      <li><a href="#"><img src="img/basket-icon.svg" width="15" height="15" alt="Картинка корзины">Корзина</a></li>
     </ul>
     <h1>Магазин готовых шаблонов</h1>
   </nav>
 </header>
 <main>
+  <section>
     <form>
       <div>
+        <h3>СЕТКА:</h3>
         <ul>
-          <li>СЕТКА:</li>
-          <li>Адаптивная</li>
-          <li>Фиксированная</li>
-          <li>Резиновая</li>
+          <li>
+            <input type="radio" name="grid-type" id="grid-adaptive" value="adaptive" checked>
+            <label for="grid-adaptive">Адаптивная</label>
+          </li>
+          <li>
+            <input type="radio" name="grid-type" id="grid-fixed" value="fixed">
+            <label for="grid-fixed">Фиксированная</label>
+          </li>
+          <li>
+            <input type="radio" name="grid-type" id="grid-flex" value="flex">
+            <label for="grid-flex">Резиновая</label>
+          </li>
         </ul>
       </div>
       <div>
+        <h3>ОСОБЕННОСТИ:</h3>
         <ul>
-          <li>ОСОБЕННОСТИ:</li>
-          <li>Слайдер</li>
-          <li>Блок преимуществ</li>
-          <li>Новости</li>
-          <li>Галерея</li>
-          <li>Корзина</li>
+          <li><input type="checkbox" name="slider" id="check_slider" checked>
+              <label for="check_slider">Слайдер</label>
+          </li>
+          <li>
+            <input type="checkbox" name="advantages" id="check_adv">
+            <label for="check_adv">Блок преимуществ</label>
+          </li>
+          <li>
+            <input type="checkbox" name="news" id="check_news" checked>
+            <label for="check_news">Новости</label>
+            </li>
+          <li>
+            <input type="checkbox" name="gallery" id="check_gallery">
+            <label for="check_gallery">Галерея</label>
+          </li>
+          <li>
+            <input type="checkbox" name="bin" id="check_bin">
+            <label for="check_bin">Корзина</label>
+          </li>
         </ul>
         <button type="button">Показать</button>
       </div>
     </form>
-    <section>
+  </section>
+  <section>
+    <div>
       <div>
-          <div>
-            <img src="img/img-sedona-jpg.png" width="360" height="576" alt="Макет сайта SEDONA">
-          </div>
-          <div>
-            <p>SEDONA</p>
-            <p>Информационный сайт для туристов</p>
-            <a href="#">9900 РУБ.</a>
-          </div>
+        <img src="img/img-sedona-jpg.jpg" width="360" height="576" alt="Макет сайта SEDONA">
       </div>
       <div>
-        <div>
-          <img src="img/img-pink-jpg.png" width="360" height="576" alt="Макет сайта PINK">
-        </div>
-        <div>
-          <p>PINK APP</p>
-          <p>Продуктовый лендинг приложения для iOS и Android</p>
-          <a href="#">9900 РУБ.</a>
-        </div>
+        <p>SEDONA</p>
+        <p>Информационный сайт для туристов</p>
+        <a href="#">9900 РУБ.</a>
+      </div>
+    </div>
+    <div>
+      <div>
+        <img src="img/img-pink-jpg.jpg" width="360" height="576" alt="Макет сайта PINK">
       </div>
       <div>
-        <div>
-          <img src="img/img-barbershop-jpg.png" width="360" height="576" alt="Макет сайта BARBERSHOP">
-        </div>
-        <div>
-          <p>BARBERSHOP</p>
-          <p>Сайт салона красоты. Для мужчин, да.</p>
-          <a href="#">9900 РУБ.</a>
-        </div>
+        <p>PINK APP</p>
+        <p>Продуктовый лендинг приложения для iOS и Android</p>
+        <a href="#">9900 РУБ.</a>
+      </div>
+    </div>
+    <div>
+      <div>
+        <img src="img/img-barbershop-jpg.jpg" width="360" height="576" alt="Макет сайта BARBERSHOP">
       </div>
       <div>
-        <div>
-          <img src="img/img-mishka-jpg.png" width="360" height="576" alt="Макет сайта MISHKA">
-        </div>
-        <div>
-          <p>MISHKA</p>
-          <p>Интернет-магазин вязаных игрушек</p>
-          <a href="#">9900 РУБ.</a>
-        </div>
+        <p>BARBERSHOP</p>
+        <p>Сайт салона красоты. Для мужчин, да.</p>
+        <a href="#">9900 РУБ.</a>
+      </div>
+    </div>
+    <div>
+      <div>
+        <img src="img/img-mishka-jpg.jpg" width="360" height="576" alt="Макет сайта MISHKA">
       </div>
       <div>
-        <div>
-          <img src="img/img-aplus-jpg.png" width="360" height="576" alt="Макет сайта А ПЛЮС">
-        </div>
-        <div>
-          <p>A PLUS</p>
-          <p>Лендинг курсов повышения квалификации</p>
-          <a href="#">9900 РУБ.</a>
-        </div>
+        <p>MISHKA</p>
+        <p>Интернет-магазин вязаных игрушек</p>
+        <a href="#">9900 РУБ.</a>
+      </div>
+    </div>
+    <div>
+      <div>
+        <img src="img/img-aplus-jpg.jpg" width="360" height="576" alt="Макет сайта А ПЛЮС">
       </div>
       <div>
-        <div>
-          <img src="img/img-kvast-jpg.png" width="360" height="576" alt="Макет сайта КВАСТ">
-        </div>
-        <div>
-          <p>КВАСТ</p>
-          <p>Промо-сайт производителя крафтового кваса</p>
-          <a href="#">9900 РУБ.</a>
-        </div>
+        <p>A PLUS</p>
+        <p>Лендинг курсов повышения квалификации</p>
+        <a href="#">9900 РУБ.</a>
       </div>
-    </section>
-    <section>
+    </div>
+    <div>
       <div>
-        <!--- КОНТЕЙНЕР ДЛЯ КАРТЫ --->
+        <img src="img/img-kvast-jpg.jpg" width="360" height="576" alt="Макет сайта КВАСТ">
       </div>
       <div>
-        <p>NЁRDS DESIGN STUDIO</p>
-        <p>191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <button type="button">Напишите нам</button>
+        <p>КВАСТ</p>
+        <p>Промо-сайт производителя крафтового кваса</p>
+        <a href="#">9900 РУБ.</a>
       </div>
-    </section>
+    </div>
+  </section>
+  <section>
+    <div>
+      <!--- КОНТЕЙНЕР ДЛЯ КАРТЫ --->
+    </div>
+    <div>
+      <p>NЁRDS DESIGN STUDIO</p>
+      <p>191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8</p>
+      <p>тел. +7 (812) 275-75-75</p>
+      <button type="button">Напишите нам</button>
+    </div>
+  </section>
 </main>
 <footer>
   <div>
@@ -131,11 +156,29 @@
 
 <section>
   <h2>Напишите нам!</h2>
-  <p>Ваше имя:</p>
-  <p>Ваш e-mail:</p>
-  <p>Текст письма</p>
-  <!--- ТУТ БУДЕТ ФОРМА --->
-  <button type="submit">Отправить</button>
+  <form method="post" action="https://echo.htmlacademy.ru">
+    <p>
+      <label for="user-name">Ваше имя:</label>
+    </p>
+    <p>
+      <input type="text" id="user-name"
+      name="field_name" placeholder="Имя Фамилия">
+    </p>
+    <p>
+      <label for="user-email">Ваш e-mail:</label>
+    </p>
+    <p>
+      <input type="email" id="user-email"
+      name="field_email" placeholder="email@example.com">
+    </p>
+    <p>
+      <label for="user-letter">Текст письма:</label>
+    </p>
+    <textarea id="user-letter" name="field_letter" placeholder="В свободной форме"></textarea>
+    <p>
+      <button type="submit">Отправить</button>
+    </p>
+  </form>
 </section>
   </body>
 </html>
