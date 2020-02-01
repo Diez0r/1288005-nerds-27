@@ -22,7 +22,26 @@
 </header>
 <main>
   <section>
+    <h3>Сортировать:</h3>
     <form>
+      <button type="button">По цене</button>
+      <button type="button">По типу</button>
+      <button type="button">По названию</button>
+      <button type="button">&#9650;</button>
+      <button type="button">&#9660;</button>
+    </form>
+  </section>
+  <section>
+    <form oninput="daysoutput.value=site_cost.value" method="post" action="https://echo.htmlacademy.ru/">
+      <div>
+        <h3>СТОИМОСТЬ:</h3>
+          <input type="range" min="1" max="15000" id="site_cost" name="site_cost" step="1">
+          <p>
+          <label for="cost_min">От</label>
+          <input type="text" id="cost_min" name="cost_min" placeholder="1">
+          <label for="cost_max">До</label>
+          <input type="text" id="cost_max" name="cost_max" placeholder="15000">
+          </p>
       <div>
         <h3>СЕТКА:</h3>
         <ul>
