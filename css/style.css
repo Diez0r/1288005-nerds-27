@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+.main-navigation {
+    background-color: #eeeeee;
+
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.site-navigation,
+.user-navigation,
+.orders-list,
+.nerds-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation li {
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+.site-navigation a,
+.user-navigation a {
+color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+color: #fb565a;
+}
+
+.site-navigation a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.main-slider,
+.find-us,
+.message-us {
+    display: none;
+}
+
+.services-list {
+    list-style: none;
+}
+
+.service-item {
+    text-align: left;
+    max-width: 300px;
+    display: inline-block;
+}
+
+.service-item h4 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.service-item p {
+    color: #283136;
+    text-overflow: clip;
+    max-width: 245px;
+}
+
+.item-red {
+    margin-left: 140px;
+}
+
+.item-green {
+    margin: 0 100px;
+}
+
+.item-yellow {
+    margin-right: 200px;
+}
+.button {
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    
+    max-height: 146px;
+    margin-top: 35px;
+    padding: 16px 45px;
+
+
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.button-red {
+    background-color: #fb565a;
+}
+
+.button-green {
+    background-color: #00ca74;
+}
+
+.button-yellow {
+    background-color: #efc84a;
+}
+
+.about-us {
+    display: inline-block;
+    margin-left: 140px;
+    max-width: 700px;
+    padding: 0;
+}
+
+.about-us h2 {
+font-size: 45px;
+line-height: 45px;
+font-weight: 500;
+color: #000000;
+
+max-width: 650px;
+text-overflow: clip;
+padding: 0;
+}
+
+.about-us p {
+font-size: 16px;
+line-height: 24px;
+color: #283136;
+max-width: 616px;
+}
+
+.orders-list li {
+    margin-left: 0;
+}
+
+.orders-list li::before {
+    content: "—";
+    color: #fb565a;
+    padding-right: 5px;
+    margin: 0;
+}
+
+.about-nerds {
+    display: inline-block;
+    margin-top: 122px;
+    margin-left: 149px;
+    margin-right: 149px;
+}
+
+.about-nerds h4 {
+font-size: 16px;
+font-weight: bold;
+text-transform: uppercase;
+line-height: 24px;
+padding-bottom: 0;
+margin: 0;
+margin-top: 41px;
+}
+
+.nerds-list li {
+    display: inline-block;
+
+    max-width: 95px;
+
+    padding-right: 26px;
+}
+
+.info-percent {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: bold;
+}
+
+.nerds-info {
+    font-size: 16px;
+    line-height: 18px;
+    color: #283136;
+}
+
+.our-projects li {
+    display: inline-block;
+    width: auto;
+    margin: 120px 70px;
+}
+
+.media-list li {
+    width: 79px;
+    height: 79px;
+    display: inline-block;
+    background-color: #e1e1e1;
+    width: 21px;
+    height: 21px;
+    text-align: center;
+    padding: 21px;
+    border-radius: 50%;
+}
+
+.be-friends {
+    display: inline-block;
+}
+
+.be-friends h3 {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+.be-friends p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #444444;
+}
