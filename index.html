@@ -3,27 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>Веб-студия "Нёрдс"</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-<header>
+<header class="main-header">
   <nav class="main-navigation">
-    <a>
-      <img src="img/nerds-logo.svg" width="160" height="65" alt="Нёрдс">
-    </a>
-    <ul class="site-navigation">
-      <li><a href="#">Студия</a></li>
-      <li><a href="#">Клиенты</a></li>
-      <li><a href="catalog.html" target="_blank">Магазин</a></li>
-      <li><a href="#">Контакты</a></li>
-      <li><a href="#"><img src="img/basket-icon.svg" width="15" height="15" alt="Картинка корзины">Корзина</a></li>
-    </ul>
+    <div class="main-navigation-wrapper">
+      <div class="container">
+        <a class="main-header-logo">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Нёрдс">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="catalog.html" target="_blank">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li><a href="#"><img src="img/basket-icon.svg" width="15" height="15" alt="Картинка корзины"> Корзина</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
+  <h1 class="visually-hidden">Веб-студия "Нёрдс"</h1>
 </header>
-<main>
-  <section class="main-slider">
+<main class="container">
+  <section class="main-slider visually-hidden">
     <div>
       <div> <!--- ПЕРВЫЙ СЛАЙД --></div>
       <div>
@@ -49,26 +56,27 @@
       </div>
     </div>
   </section>
-  <h2 class="visually-hidden">Веб-студия "Нёрдс"</h2>
+    <h2 class="visually-hidden">Виды услуг</h2>
     <section class="services">
       <ul class="services-list">
-        <li class="service-item item-red"><img src="img/advantage-picture-red.png" width="300" height="146" alt="Веб-сайты">
+        <li class="service-item"><img src="img/advantage-picture-red.png" width="300" height="146" alt="Веб-сайты">
           <h4>Веб-сайты</h4>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a class="button button-red" href="#">Заказать</a>
+            <a class="button-link button-link-red" href="#">Заказать</a>
         </li>
-        <li class="service-item item-green"><img src="img/advantage-picture-green.png" width="300" height="146" alt="Приложения">
+        <li class="service-item"><img src="img/advantage-picture-green.png" width="300" height="146" alt="Приложения">
           <h4>Приложения</h4>
             <p>Покорите топ-10 приложений в AppStore и Google Play<p>
-            <a class="button button-green" href="#">Заказать</a>
+            <a class="button-link button-link-green" href="#">Заказать</a>
         </li>
-        <li class="service-item item-yellow"><img src="img/advantage-picture-yellow.png" width="300" height="146" alt="Презентации">
+        <li class="service-item"><img src="img/advantage-picture-yellow.png" width="300" height="146" alt="Презентации">
           <h4>Презентации</h4>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="button button-yellow" href="#">Заказать</a>
+            <a class="button-link button-link-yellow" href="#">Заказать</a>
         </li>
       </ul>
     </section>
+  <div class="nerds-bio">
     <section class="about-us">
       <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара. </h2>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -88,6 +96,7 @@
         <li><p class="info-percent">50%</p><p class="nerds-info">Минимальная предоплата<p></li>
       </ul>
     </section>
+  </div>
     <section class="our-projects">
       <ul class="projects-list">
         <li><a href="https://htmlacademy.ru/intensive/htmlcss" title="Профессиональный онлайн‑курс HTML и CSS, уровень 1">
@@ -101,52 +110,56 @@
       <div>
       <!--- КОНТЕЙНЕР ДЛЯ КАРТЫ --->
       </div>
-      <div>
-        <p>NЁRDS DESIGN STUDIO</p>
-        <p>191186, Санкт-Петербург,<br>
+      <div class="find-box">
+        <p class="find-head">NЁRDS DESIGN STUDIO</p>
+        <p class="find-info">191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <button type="button">Напишите нам</button>
+        <p class="find-info">тел. +7 (812) 275-75-75</p>
+        <button class="button button-message-us" type="button">Напишите нам</button>
       </div>
     </section>
 </main>
-<footer>
-  <div class="social-media">
-    <ul class="media-list">
-      <li><a href="#"><img src="img/vk-icon.svg" alt="VK"></a></li>
-      <li><a href="#"><img src="img/fb-icon.svg" alt="Facebook"></a></li>
-      <li><a href="#"><img src="img/insta-icon.svg" alt="Instagram"></a></li>
-    </ul>
-  </div>
-  <div class="be-friends">
-    <h3>Давайте дружить, это выгодно!</h3>
-    <p>Скидка 10% для друзей из социальных сетей.</p>
+<footer class="container">
+  <div class="main-footer">
+    <div class="social-media">
+      <ul class="media-list">
+        <li><a href="#">VK</a></li>
+        <li><a href="#">FB</a></li>
+        <li><a href="#">INSTAGRAM</a></li>
+      </ul>
+    </div>
+    <div class="be-friends">
+      <p>Давайте дружить, это выгодно!</p>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </div>
   </div>
 </footer>
 
-<section class="message-us">
+<section class="message-us visually-hidden">
   <h2>Напишите нам!</h2>
   <form method="post" action="https://echo.htmlacademy.ru">
     <p>
       <label for="user-name">Ваше имя:</label>
     </p>
-    <p>
+    <p class="message-field">
       <input type="text" id="user-name"
       name="field_name" placeholder="Имя Фамилия">
     </p>
     <p>
       <label for="user-email">Ваш e-mail:</label>
     </p>
-    <p>
+    <p class="message-field">
       <input type="email" id="user-email"
       name="field_email" placeholder="email@example.com">
     </p>
     <p>
       <label for="user-letter">Текст письма:</label>
     </p>
+    <p class="message-field">
     <textarea id="user-letter" name="field_letter" placeholder="В свободной форме"></textarea>
+    </p>
     <p>
-      <button type="submit">Отправить</button>
+      <button class="button" type="submit">Отправить</button>
     </p>
   </form>
 </section>
