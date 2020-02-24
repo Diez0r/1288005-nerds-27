@@ -16,7 +16,7 @@
           <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a class="active" href="catalog.html" target="_blank">Магазин</a></li>
+          <li><a class="active" href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
@@ -28,57 +28,78 @@
 <main>
   <div class="catalog-columns container">
     <section class="filters">
-      <form oninput="daysoutput.value=site_cost.value" method="post" action="https://echo.htmlacademy.ru/">
+      <form oninput="daysoutput.value=site_cost.value" method="get" action="https://echo.htmlacademy.ru/">
+        <fieldset class="filter-item filter-item-value">
+        <h3 class="value-head">Стоимость:</h3>
         <div class="filters-value">
-          <h3>СТОИМОСТЬ:</h3>
-            <input type="range" min="1" max="15000" id="site_cost" name="site_cost" step="1">
-            <p>
-            <label for="cost_min">От</label>
-            <input type="text" id="cost_min" name="cost_min" placeholder="1">
-            <label for="cost_max">До</label>
-            <input type="text" id="cost_max" name="cost_max" placeholder="15000">
-            </p>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+            <div class="price-controls">
+            <label class="min-price">От<input type="number" id="cost_min" name="cost_min" value="0"></label>
+            <label class="max-price">До<input type="number" id="cost_max" name="cost_max" value="15000"></label>
+            </div>
         </div>
-        <fieldset>
-          <legend>Сетка:</legend>
+        </fieldset>
+        <fieldset class="filter-item">
+          <h3 class="field-head">Сетка:</h3>
           <ul class="radio-list">
             <li>
+              <div class="radiocontainer">
               <input class="filter-input filter-input-radio" type="radio" name="grid-type" id="grid-adaptive" value="adaptive" checked>
               <label for="grid-adaptive">Адаптивная</label>
+              </div>
             </li>
             <li>
+              <div class="radiocontainer">
               <input class="filter-input filter-input-radio" type="radio" name="grid-type" id="grid-fixed" value="fixed">
               <label for="grid-fixed">Фиксированная</label>
+              </div>
             </li>
             <li>
+              <div class="radiocontainer">
               <input class="filter-input filter-input-radio" type="radio" name="grid-type" id="grid-flex" value="flex">
               <label for="grid-flex">Резиновая</label>
+              </div>
             </li>
           </ul>
         </fieldset>
-        <fieldset>
-          <legend>Особенности:</legend>
+        <fieldset class="filter-item">
+          <h3 class="field-head">Особенности:</h3>
           <ul class="advantages-list">
-            <label for="check_slider" class="checkboxcontainer">
-                <input class="filter-input filter-input-checkbox" type="checkbox" name="slider" id="check_slider">
-                <div class="checkboxcontainer__icon"></div>
-                <div class="checkboxcontainer__text">Слайдер</div>
-            </label>
             <li>
+              <div class="checkboxcontainer">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="slider" id="check_slider">
+                <label for="check_slider">Слайдер</label>
+            </div>
+            </li>
+            <li>
+              <div class="checkboxcontainer">
               <input class="filter-input filter-input-checkbox" type="checkbox" name="advantages" id="check_adv">
               <label for="check_adv">Блок преимуществ</label>
+              </div>
             </li>
             <li>
+              <div class="checkboxcontainer">
               <input class="filter-input filter-input-checkbox" type="checkbox" name="news" id="check_news" checked>
               <label for="check_news">Новости</label>
+              </div>
               </li>
             <li>
+              <div class="checkboxcontainer">
               <input class="filter-input filter-input-checkbox" type="checkbox" name="gallery" id="check_gallery">
               <label for="check_gallery">Галерея</label>
+              </div>
             </li>
             <li>
+              <div class="checkboxcontainer">
               <input class="filter-input filter-input-checkbox" type="checkbox" name="bin" id="check_bin">
               <label for="check_bin">Корзина</label>
+              </div>
             </li>
           </ul>
           <button class="button-show" type="submit">Показать</button>
@@ -88,17 +109,16 @@
 <div class="catalog">
   <section class="sort-container">
     <p>Сортировать:</p>
-    <form>
-      <button class="button-sort active-sort" type="button">По цене</button>
-      <button class="button-sort" type="button">По типу</button>
-      <button class="button-sort" type="button">По названию</button>
-      <button class="button-sort active-sort" type="button">&#9660;</button>
-      <button class="button-sort" type="button">&#9650;</button>
-    </form>
+    <div class="button-container">
+      <a href="#" class="button-sort active-sort">По цене</a>
+      <a href="#" class="button-sort">По типу</a>
+      <a href="#" class="button-sort">По названию</a>
+      <a href="#" class="button-sort active-sort">&#9660;</a>
+      <a href="#" class="button-sort">&#9650;</a>
+    </div>
   </section >
-  <section>
-    <ul class="catalog-list">
-    <li class="catalog-item catalog-item1">
+  <section class="catalog-list">
+    <div class="catalog-item">
       <div class="site-description">
         <p class="site-name"><a href="#">SEDONA</a></p>
         <p class="about-site">Информационный сайт для туристов</p>
@@ -106,8 +126,8 @@
       </div>
       <img class="img-browser" src="img/browser.svg" width="360px" height="40px" alt="окно браузера">
       <img src="img/img-sedona-jpg.jpg" width="360" height="576" alt="Макет сайта SEDONA">
-    </li>
-    <li class="catalog-item">
+    </div>
+    <div class="catalog-item">
       <img class="img-browser" src="img/browser.svg" width="360px" height="40px" alt="окно браузера">
       <img src="img/img-pink-jpg.jpg" width="360" height="576" alt="Макет сайта PINK">
       <div class="site-description">
@@ -115,8 +135,8 @@
         <p class="about-site">Продуктовый лендинг приложения для iOS и Android</p>
         <a class="button site-price" href="#">9900 РУБ.</a>
       </div>
-    </li>
-    <li class="catalog-item">
+    </div>
+    <div class="catalog-item">
       <img class="img-browser" src="img/browser.svg" width="360px" height="40px" alt="окно браузера">
       <img src="img/img-barbershop-jpg.jpg" width="360" height="576" alt="Макет сайта BARBERSHOP">
       <div class="site-description">
@@ -124,8 +144,8 @@
         <p class="about-site">Сайт салона красоты. Для мужчин, да.</p>
         <a class="button site-price" href="#">9900 РУБ.</a>
       </div>
-    </li>
-    <li class="catalog-item">
+    </div>
+    <div class="catalog-item">
       <img class="img-browser" src="img/browser.svg" width="360px" height="40px" alt="окно браузера">
       <img src="img/img-mishka-jpg.jpg" width="360" height="576" alt="Макет сайта MISHKA">
       <div class="site-description">
@@ -133,8 +153,8 @@
         <p class="about-site">Интернет-магазин вязаных игрушек</p>
         <a class="button site-price" href="#">9900 РУБ.</a>
       </div>
-    </li>
-    <li class="catalog-item">
+    </div>
+    <div class="catalog-item">
       <img class="img-browser" src="img/browser.svg" width="360px" height="40px" alt="окно браузера">
       <img src="img/img-aplus-jpg.jpg" width="360" height="576" alt="Макет сайта А ПЛЮС">
       <div class="site-description">
@@ -142,8 +162,8 @@
         <p class="about-site">Лендинг курсов повышения квалификации</p>
         <a class="button site-price" href="#">9900 РУБ.</a>
       </div>
-    </li>
-    <li class="catalog-item">
+    </div>
+    <div class="catalog-item">
       <img class="img-browser" src="img/browser.svg" width="360px" height="40px" alt="окно браузера">
       <img src="img/img-kvast-jpg.jpg" width="360" height="576" alt="Макет сайта КВАСТ">
       <div class="site-description">
@@ -151,16 +171,13 @@
         <p class="about-site">Промо-сайт производителя крафтового кваса</p>
         <a class="button site-price" href="#">9900 РУБ.</a>
       </div>
-    </li>
-  </ul>
+    </div>
   </section>
   <section class="pages-container">
-    <form>
-      <button class="button-page active-page" type="button">1</button>
-      <button class="button-page" type="button">2</button>
-      <button class="button-page" type="button">3</button>
-      <button class="button-page next-page" type="button">Следующая</button>
-    </form>
+      <a href="#" class="button-page active-page">1</a>
+      <a href="#" class="button-page">2</a>
+      <a href="#" class="button-page">3</a>
+      <a href="#" class="button-page next-page">Следующая</a>
   </section >
 </div>
 </div>
@@ -206,33 +223,34 @@
 
 
 <section class="message-us">
-  <h2>Напишите нам!</h2>
+  <button class="modal-close" type="button">
+    <span class="visually-hidden">Закрыть</span>
+  </button>
+  <h2>Напишите нам</h2>
   <form method="post" action="https://echo.htmlacademy.ru">
-    <p>
-      <label for="user-name">Ваше имя:</label>
-    </p>
-    <p class="message-field">
-      <input type="text" id="user-name"
-      name="field_name" placeholder="Имя Фамилия">
-    </p>
-    <p>
-      <label for="user-email">Ваш e-mail:</label>
-    </p>
-    <p class="message-field">
-      <input type="email" id="user-email"
-      name="field_email" placeholder="email@example.com">
-    </p>
-    <p>
-      <label for="user-letter">Текст письма:</label>
-    </p>
-    <p class="message-field">
-    <textarea id="user-letter" name="field_letter" placeholder="В свободной форме"></textarea>
-    </p>
-    <p>
-      <button class="button" type="submit">Отправить</button>
-    </p>
+    <div class="message-input">
+    <div class="input-data input-login">
+      <label for="user-name" class="message-label">Ваше имя:</label>
+      <p>
+      <input class="message-field" type="text" id="user-name" name="field_name" placeholder="Имя Фамилия">
+      </p>
+    </div>
+    <div class="input-data input-email">
+      <p>
+      <label for="user-email" class="message-label">Ваш e-mail:</label>
+      <p>
+      <input class="message-field" type="email" id="user-email" name="field_email" placeholder="email@example.com">
+      </p>
+    </div>
+    <div class="input-data input-letter">
+      <label for="user-letter" class="message-label">Текст письма:</label>
+      <p>
+      <textarea class="message-letter" id="user-letter" rows="4" name="field_letter" placeholder="В свободной форме"></textarea>
+      </p>
+    </div>
+  </div>
+  <button class="button button-send-message" type="submit">Отправить</button>
   </form>
 </section>
-
   </body>
 </html>

@@ -16,11 +16,11 @@
       <ul class="site-navigation">
       <li><a href="#">Студия</a></li>
       <li><a href="#">Клиенты</a></li>
-      <li><a href="catalog.html" target="_blank">Магазин</a></li>
-      <li><a class="active" href="#">Контакты</a></li>
+      <li><a href="catalog.html">Магазин</a></li>
+      <li><a href="#">Контакты</a></li>
     </ul>
     <ul class="user-navigation">
-      <li><a href="#" class="active img-basket">Корзина</a></li>
+      <li><a href="#" class="img-basket">Корзина</a></li>
     </ul>
   </nav>
     <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
@@ -84,27 +84,27 @@
         </li>
       </ul>
     </section>
-  <div class="nerds-bio container">
-    <section class="about-us">
+  <section class="nerds-bio container">
+    <div class="about-us">
       <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара. </h2>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <h4>Выполняем заказы на разработку:</h4>
+        <p class="principes">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+        <p class="activities">Выполняем заказы на разработку:</p>
       <ul class="orders-list">
-        <li>Веб-сайтов любой сложности</li>
-        <li>Мобильных приложений для iOS и Android</li>
-        <li>Слайдшоу и видео для корпоративных презентаций</li>
+        <li class="orders-info">Веб-сайтов любой сложности</li>
+        <li class="orders-info">Мобильных приложений для iOS и Android</li>
+        <li class="orders-info">Слайдшоу и видео для корпоративных презентаций</li>
       </ul>
-    </section>
-    <section class="about-nerds">
-      <img src="img/nerds-picture.png" width="360" height="208" alt="Логотип студии Нёрдс">
-      <h4>с 2004 года Любим точность во всем:</h4>
+    </div>
+    <div class="about-nerds">
+      <div class="about-nerds-pic"></div>
+      <p class="about-since">с 2004 года Любим точность во всем:</p>
       <ul class="nerds-list">
         <li><p class="info-percent">146%</p><p class="nerds-info">Уровень самоотдачи</p></li>
         <li><p class="info-percent">100%</p><p class="nerds-info">Соблюдение сроков</p></li>
         <li><p class="info-percent">50%</p><p class="nerds-info">Минимальная предоплата<p></li>
       </ul>
-    </section>
-  </div>
+    </div>
+  </section>
     <section class="our-projects container">
       <ul class="projects-list">
         <li class="projects-link"><a href="https://htmlacademy.ru/intensive/htmlcss" title="Профессиональный онлайн‑курс HTML и CSS, уровень 1">
@@ -154,32 +154,34 @@
   </div>
 </footer>
 
-<section class="message-us visually-hidden">
-  <h2>Напишите нам!</h2>
+<section class="message-us">
+  <button class="modal-close" type="button">
+    <span class="visually-hidden">Закрыть</span>
+  </button>
+  <h2>Напишите нам</h2>
   <form method="post" action="https://echo.htmlacademy.ru">
-    <p>
-      <label for="user-name">Ваше имя:</label>
-    </p>
-    <p class="message-field">
-      <input type="text" id="user-name"
-      name="field_name" placeholder="Имя Фамилия">
-    </p>
-    <p>
-      <label for="user-email">Ваш e-mail:</label>
-    </p>
-    <p class="message-field">
-      <input type="email" id="user-email"
-      name="field_email" placeholder="email@example.com">
-    </p>
-    <p>
-      <label for="user-letter">Текст письма:</label>
-    </p>
-    <p class="message-field">
-    <textarea id="user-letter" name="field_letter" placeholder="В свободной форме"></textarea>
-    </p>
-    <p>
-      <button class="button" type="submit">Отправить</button>
-    </p>
+    <div class="message-input">
+    <div class="input-data input-login">
+      <label for="user-name" class="message-label">Ваше имя:</label>
+      <p>
+      <input class="message-field" type="text" id="user-name" name="field_name" placeholder="Имя Фамилия">
+      </p>
+    </div>
+    <div class="input-data input-email">
+      <p>
+      <label for="user-email" class="message-label">Ваш e-mail:</label>
+      <p>
+      <input class="message-field" type="email" id="user-email" name="field_email" placeholder="email@example.com">
+      </p>
+    </div>
+    <div class="input-data input-letter">
+      <label for="user-letter" class="message-label">Текст письма:</label>
+      <p>
+      <textarea class="message-letter" id="user-letter" rows="4" name="field_letter" placeholder="В свободной форме"></textarea>
+      </p>
+    </div>
+  </div>
+  <button class="button button-send-message" type="submit">Отправить</button>
   </form>
 </section>
   </body>
