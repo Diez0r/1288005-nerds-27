@@ -1,3 +1,13 @@
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -80,12 +90,13 @@ padding-top: 49px;
 .main-navigation.container {
     display: flex;
     justify-content: center;
+    margin-bottom: 18px;
 }
 
 .main-header-logo {
     width: 160px;
     height: 65px;
-    margin-bottom: 36px;
+    
     margin-right: 202px;
 }
 
@@ -180,7 +191,7 @@ padding-top: 49px;
 .main-slider {
     background-image: url("../img/slide-picture.png");
     background-repeat: no-repeat;
-    background-position: 85% 100%;
+    background-position: 87% 100%;
 
     min-height: 413px;
 
@@ -359,7 +370,7 @@ padding-top: 49px;
 
     position: absolute;
     left: 0;
-    top: 70%;
+    top: 75%;
     transform: translateY(-50%);
 }
 
@@ -369,7 +380,7 @@ padding-top: 49px;
     background-image: url("../img/nerds-picture.png");
     background-repeat: no-repeat;
     margin: 0;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .about-since {
@@ -385,16 +396,19 @@ padding-top: 49px;
 
 .nerds-list li {
     display: inline-block;
-
+    box-sizing: content-box;
     max-width: 95px;
 
-    padding-right: 26px;
+    padding-right: 25px;
 }
 
 .info-percent {
+    box-sizing: content-box;
     padding: 0;
     margin: 0;
     margin-bottom: 20px;
+    
+    max-width: 95px;
     font-size: 45px;
     line-height: 45px;
     font-weight: bold;
@@ -430,7 +444,7 @@ padding-top: 49px;
     justify-content: center;
     flex-wrap: wrap;
 
-    width: 300px;
+    width: 295px;
 
     position: relative;
 }
@@ -555,7 +569,51 @@ padding-top: 49px;
     color: #444444;
 }
 
+@keyframes bounce {
+
+    0% {
+        transform: translateY(-2000px);
+    }
+
+    70% {
+        transform: translateY(30px);
+    }
+
+    90% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes shake {
+    0%, 
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
+}
+
+
+
 .message-us {
+    box-sizing: content-box;
     position: fixed;
     top: 60px;
     left: 50%;
@@ -572,6 +630,12 @@ padding-top: 49px;
 
     background-color: #ffffff;
     box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+
+    animation: bounce 0.6s;
+}
+
+.message-error {
+    animation: shake 0.6s;
 }
 
 .modal-close {
@@ -601,6 +665,10 @@ padding-top: 49px;
 .modal-close:active {
     opacity: 0.1;
     border: none;
+}
+
+.message-us-show {
+    display: block;
 }
 
 .message-input {
@@ -633,6 +701,17 @@ padding-top: 49px;
 
     border: 2px solid #d7dcde;
     border-radius: 3px;
+}
+
+.message-field:hover,
+.message-letter:hover {
+    border-color: #b4b9bb;
+}
+
+.message-field:focus,
+.message-letter:focus {
+    color: #000000;
+    border-color: #000000;
 }
 
 .message-letter {
@@ -707,7 +786,7 @@ padding-top: 49px;
 .site-price {
     margin-bottom: 43px;
 
-    padding: 16px 122px;
+    padding: 16px 80px;
 }
 
 
@@ -868,6 +947,7 @@ padding-top: 49px;
 .range-controls {
     position: relative;
 
+    box-sizing: content-box;
     height: 41px;
     margin-bottom: 15px;
     padding-top: 39px;
@@ -927,6 +1007,7 @@ padding-top: 49px;
 }
 
 .price-controls input {
+    box-sizing: content-box;
     width: 60px;
     padding: 8px 10px;
     margin-left: 10px;
@@ -959,10 +1040,6 @@ padding-top: 49px;
 .filters ul {
     line-height: 20px;
     color: #283136;
-}
-
-.filter-input:disabled + label {
-    color: rgba(40, 49, 54, 0.3);
 }
 
 .catalog {
@@ -1010,6 +1087,7 @@ padding-top: 49px;
 }
 
 .site-description {
+    box-sizing: content-box;
     position: absolute;
     background-color: #eeeeee;
     width: 360px;
@@ -1121,66 +1199,69 @@ padding-top: 49px;
 
 .radio-list,
 .advantages-list {
-    padding-left: 20px;
+    padding-left: 35px;
     margin: 0;
     padding-bottom: 50px;
 }
 
 .radiocontainer,
 .checkboxcontainer {
+    display: block;
     margin-bottom: 10px;
 }
 
-.radiocontainer input[type="radio"] {
-    opacity: 0;
-}
-
-.radiocontainer label {
-    position: relative;
-}
-
-.radiocontainer label::before {
+.radio__box {
     position: absolute;
-    content: "";
-    display: block;
-    height: 25px;
+    margin-left: -35px;
     width: 25px;
-
+    height: 25px;
     background-image: url("../img/radio-off.svg");
     background-repeat: no-repeat;
-    top: 0;
-    left: -35px;
-
+    opacity: 0.4;
 }
 
-.radiocontainer label::after {
-    position: absolute;
-    content: "";
-    display: inline-block;
-    height: 25px;
-    width: 25px;
-
+.filter-input-radio:checked + .radio__box {
     background-image: url("../img/radio-on.svg");
     background-repeat: no-repeat;
-    top: 0;
-    left: -35px;
-
-    
+    opacity: 0.4;
 }
 
-.radiocontainer input[type="radio"] + label::after {
-    content: none;
+.filter-input-radio:hover + .radio__box,
+.filter-input-radio:focus + .radio__box {
+    opacity: 1;
 }
 
-.radiocontainer input[type="radio"]:checked + label::after {
-    content: "";
+.filter-input-radio:disabled + .radio__box {
+    opacity: 0.1;
 }
 
-.checkboxcontainer input[type="checkbox"] {
-    opacity: 0;
+.check__box {
+    position: absolute;
+    margin-left: -35px;
+    width: 27px;
+    height: 23px;
+    background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+    opacity: 0.4;
 }
 
-.checkboxcontainer label {
+.filter-input-checkbox:checked + .check__box {
+    background-image: url("../img/checkbox-on.svg");
+    background-repeat: no-repeat;
+    opacity: 0.4;
+}
+
+.filter-input-checkbox:hover + .check__box,
+.filter-input-checkbox:focus + .check__box {
+    opacity: 1;
+}
+
+.filter-input-checkbox:disabled + .check__box {
+    opacity: 0.1;
+}
+
+
+/* .checkboxcontainer label {
     position: relative;
 }
 
@@ -1217,7 +1298,7 @@ padding-top: 49px;
 
 .checkboxcontainer input[type="checkbox"]:checked + label::after {
     content: "";
-}
+} */
 
 
 /* .checkboxcontainer {

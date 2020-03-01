@@ -49,22 +49,25 @@
           <h3 class="field-head">Сетка:</h3>
           <ul class="radio-list">
             <li>
-              <div class="radiocontainer">
-              <input class="filter-input filter-input-radio" type="radio" name="grid-type" id="grid-adaptive" value="adaptive" checked>
-              <label for="grid-adaptive">Адаптивная</label>
-              </div>
+              <label class="radiocontainer">
+              <input class="filter-input filter-input-radio visually-hidden" type="radio" name="grid-type" value="adaptive" checked>
+              <span class="radio__box"></span>
+              Адаптивная
+              </label>
             </li>
             <li>
-              <div class="radiocontainer">
-              <input class="filter-input filter-input-radio" type="radio" name="grid-type" id="grid-fixed" value="fixed">
-              <label for="grid-fixed">Фиксированная</label>
-              </div>
+              <label class="radiocontainer">
+              <input class="filter-input filter-input-radio visually-hidden" type="radio" name="grid-type" value="fixed">
+              <span class="radio__box"></span>
+              Фиксированная
+              </label>
             </li>
             <li>
-              <div class="radiocontainer">
-              <input class="filter-input filter-input-radio" type="radio" name="grid-type" id="grid-flex" value="flex">
-              <label for="grid-flex">Резиновая</label>
-              </div>
+              <label class="radiocontainer">
+              <input class="filter-input filter-input-radio visually-hidden" type="radio" name="grid-type" value="flex" checked disabled>
+              <span class="radio__box"></span>
+              Резиновая
+              </label>
             </li>
           </ul>
         </fieldset>
@@ -72,34 +75,39 @@
           <h3 class="field-head">Особенности:</h3>
           <ul class="advantages-list">
             <li>
-              <div class="checkboxcontainer">
-                <input class="filter-input filter-input-checkbox" type="checkbox" name="slider" id="check_slider">
-                <label for="check_slider">Слайдер</label>
-            </div>
+              <label class="checkboxcontainer">
+                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="slider">
+                <span class="check__box"></span>
+                Слайдер
+              </label>
             </li>
             <li>
-              <div class="checkboxcontainer">
-              <input class="filter-input filter-input-checkbox" type="checkbox" name="advantages" id="check_adv">
-              <label for="check_adv">Блок преимуществ</label>
-              </div>
+              <label class="checkboxcontainer">
+              <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="advantages">
+              <span class="check__box"></span>
+              Блок преимуществ
+            </label>
             </li>
             <li>
-              <div class="checkboxcontainer">
-              <input class="filter-input filter-input-checkbox" type="checkbox" name="news" id="check_news" checked>
-              <label for="check_news">Новости</label>
-              </div>
+              <label class="checkboxcontainer">
+              <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="news" checked>
+              <span class="check__box"></span>
+              Новости
+            </label>
               </li>
             <li>
-              <div class="checkboxcontainer">
-              <input class="filter-input filter-input-checkbox" type="checkbox" name="gallery" id="check_gallery">
-              <label for="check_gallery">Галерея</label>
-              </div>
+              <label class="checkboxcontainer">
+              <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="gallery" disabled>
+              <span class="check__box"></span>
+              Галерея
+              </label>
             </li>
             <li>
-              <div class="checkboxcontainer">
-              <input class="filter-input filter-input-checkbox" type="checkbox" name="bin" id="check_bin">
-              <label for="check_bin">Корзина</label>
-              </div>
+              <label class="checkboxcontainer">
+              <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="bin" disabled checked>
+              <span class="check__box"></span>
+              Корзина
+            </label>
             </li>
           </ul>
           <button class="button-show" type="submit">Показать</button>
@@ -252,5 +260,8 @@
   <button class="button button-send-message" type="submit">Отправить</button>
   </form>
 </section>
+
+<script src="js/script.js"></script>
+
   </body>
 </html>
