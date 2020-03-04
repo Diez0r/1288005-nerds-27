@@ -69,35 +69,34 @@ a {
 }
 
 .main-header h1 {
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+    padding-bottom: 109px;
+
     font-size: 55px;
     line-height: 55px;
     text-align: center;
     font-weight: 500;
-
-    padding-bottom: 116px;
 }   
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 .main-navigation {
-padding-top: 49px;
-}
-
-.main-navigation.container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 18px;
+    padding-top: 49px;
 }
 
 .main-header-logo {
     width: 160px;
     height: 65px;
-    
-    margin-right: 202px;
 }
 
 .main-header-logo:hover,
@@ -121,18 +120,17 @@ padding-top: 49px;
     font-weight: 500;
     text-transform: uppercase;
     color: #000000;
-    margin: 0 auto;    
+    padding-top: 15px;
 }
 
+
 .site-navigation {
-    min-width: 440px;
+    justify-content: center;
 }
 
 .user-navigation {
     width: 115px;
-    margin-right: 40px;
-    margin-left: 245px;
-    vertical-align: middle;
+    margin-left: 42px;
 }
 
 .user-navigation a {
@@ -150,7 +148,10 @@ padding-top: 49px;
     font-weight: 500;
     color: #000000;
     vertical-align: middle;
-    padding-bottom: 12px;
+}
+
+.site-navigation a {
+    padding: 0 23px;
 }
 
 .img-basket {
@@ -191,7 +192,7 @@ padding-top: 49px;
 .main-slider {
     background-image: url("../img/slide-picture.png");
     background-repeat: no-repeat;
-    background-position: 87% 100%;
+    background-position: 90% 100%;
 
     min-height: 413px;
 
@@ -200,8 +201,8 @@ padding-top: 49px;
 
 .slider-controls {
     position: absolute;
-    bottom: 96px;
-    left: 46%;
+    bottom: 90px;
+    left: 559px;
     z-index: 20;
 
     font-size: 0;
@@ -211,7 +212,7 @@ padding-top: 49px;
     display: inline-block;
     width: 18px;
     height: 18px;
-    margin-right: 8px;
+    margin-right: 15px;
   
     vertical-align: top;
   
@@ -230,12 +231,12 @@ padding-top: 49px;
 } */
 
 .slide-words {
-    padding-top: 65px;
+    padding-top: 61px;
 }
 
 .slide-head {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
@@ -277,7 +278,7 @@ padding-top: 49px;
     justify-content: space-between;
     flex-wrap: wrap;
 
-    margin-bottom: 80px;
+    margin-bottom: 59px;
 }
 
 .services-list {
@@ -297,13 +298,18 @@ padding-top: 49px;
 }
 
 .service-head {
+    margin: 0;
+    padding-top: 24px;
+    padding-bottom: 15px;
     font-size: 24px;
     font-weight: bold;
     line-height: 30px;
     text-transform: uppercase;
 }
 
-.service-item p {
+.service-text {
+    margin: 0;
+    margin-bottom: 35px;
     color: #283136;
     max-width: 245px;
 }
@@ -315,7 +321,7 @@ padding-top: 49px;
 
     border-top: 2px solid #eeeeee;
     padding-top: 40px;
-    padding-bottom: 70px;
+    margin-bottom: 63px;
 }
 
 .about-us {
@@ -355,8 +361,8 @@ padding-top: 49px;
     font-size: 16px;
     line-height: 24px;
     color: #283136;
-    padding-top: 22px;
-    padding-left: 30px;
+    padding-top: 24px;
+    padding-left: 35px;
 
     position: relative;
 }
@@ -375,10 +381,11 @@ padding-top: 49px;
 }
 
 .about-nerds-pic {
-    width: 360px;
+    min-width: 360px;
     height: 208px;
     background-image: url("../img/nerds-picture.png");
     background-repeat: no-repeat;
+    background-position: right bottom;
     margin: 0;
     margin-bottom: 40px;
 }
@@ -390,8 +397,9 @@ padding-top: 49px;
     text-align: center;
     line-height: 24px;
     padding: 0;
+    padding-left: 5px;
     margin: 0;
-    margin-bottom: 38px
+    margin-bottom: 40px
 }
 
 .nerds-list li {
@@ -399,7 +407,7 @@ padding-top: 49px;
     box-sizing: content-box;
     max-width: 95px;
 
-    padding-right: 25px;
+    padding-right: 20px;
 }
 
 .info-percent {
@@ -414,6 +422,10 @@ padding-top: 49px;
     font-weight: bold;
 }
 
+.info-percent sup {
+    font-size: 59%;
+}
+
 .nerds-info {
     padding: 0;
     margin: 0;
@@ -423,7 +435,7 @@ padding-top: 49px;
 }
 
 .our-projects {
-    padding-bottom: 80px;
+    padding-bottom: 82px;
 }
 
 .projects-list {
@@ -444,9 +456,27 @@ padding-top: 49px;
     justify-content: center;
     flex-wrap: wrap;
 
-    width: 295px;
+    width: 290px;
 
     position: relative;
+}
+
+.projects-list li:nth-child(1) {
+    padding-top: 12px;
+    padding-right: 30px;   
+}
+
+.projects-list li:nth-child(2) {
+    padding-right: 8px;
+}
+
+.projects-list li:nth-child(3) {
+    padding-left: 8px;
+}
+
+.projects-list li:nth-child(4) {
+    padding-top: 5px;
+    padding-left: 30px;
 }
 
 .projects-link + .projects-link::before {
@@ -493,15 +523,15 @@ padding-top: 49px;
     height: 308px;
     background-color: #ffffff;
     position: absolute;
-    top: 60px;
-    left: 150px;
+    top: 54px;
+    left: 140px;
 }
 
 .find-head {
     margin: 0;
     padding: 0;
-    padding-top: 45px;
-    padding-bottom: 25px;
+    padding-top: 50px;
+    padding-bottom: 23px;
     padding-left: 50px;
     font-size: 18px;
     line-height: 30px;
@@ -520,11 +550,11 @@ padding-top: 49px;
 }
 
 .find-adress {
-    padding-bottom: 17px;
+    padding-bottom: 19px;
 }
 
 .find-tel {
-    margin-bottom: 40px;
+    margin-bottom: 37px;
 }
 
 .main-footer {
@@ -540,7 +570,7 @@ padding-top: 49px;
 
     min-width: 264px;
     
-    margin-right: 140px;
+    margin-right: 137px;
 }
 
 .social-button {
@@ -554,16 +584,20 @@ padding-top: 49px;
 
     background-color: #e1e1e1;
     border-radius: 50%;
+
 }
 
-.be-friends p:nth-child(1){
+.p_friends {
     margin: 0;
-    font-size: 32px;
-    line-height: 32px;
+    padding-top: 5px;
+    font-size: 36px;
+    line-height: 36px;
     font-weight: bold;
 }
 
-.be-friends p:nth-child(2) {
+.p_sale {
+    margin: 0;
+    padding-top: 10px;
     font-size: 16px;
     line-height: 22px;
     color: #444444;
@@ -753,7 +787,7 @@ padding-top: 49px;
     background-color: #fb565a;
     border: none;
     
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 .social-button:hover,
@@ -783,10 +817,16 @@ padding-top: 49px;
     box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
+.social-button:active svg {
+    background-color: #d7373b;
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+    opacity: 0.3;
+}
+
 .site-price {
     margin-bottom: 43px;
 
-    padding: 16px 80px;
+    padding: 16px 61px;
 }
 
 
@@ -807,11 +847,11 @@ padding-top: 49px;
 } */
 
 .button-learn-more {
-    padding: 18px 55px;
+    padding: 16px 55px;
 }
 
 .button-link-red {
-    padding: 16px 39px;
+    padding: 16px 40px;
     background-color: #fb565a;
 }
 
@@ -825,7 +865,7 @@ padding-top: 49px;
 }
 
 .button-link-green {
-    padding: 16px 39px;
+    padding: 16px 40px;
     background-color: #00ca74;
 }
 
@@ -841,7 +881,7 @@ padding-top: 49px;
 }
 
 .button-link-yellow {
-    padding: 16px 39px;
+    padding: 16px 40px;
     background-color: #efc84a;
 }
 
@@ -858,7 +898,7 @@ padding-top: 49px;
 
 .button-message-us {
     margin-left: 50px;
-    padding: 19px 46px;
+    padding: 16px 45px;
 }
 
 
@@ -899,6 +939,7 @@ padding-top: 49px;
     line-height: 18px;
     color: rgba(0, 0, 0, 0.3);
     text-transform: uppercase;
+    text-align: left;
 
     background-color: transparent;
     border: none;
@@ -918,6 +959,7 @@ padding-top: 49px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 55px;
 }
 
 .filters {
@@ -931,17 +973,20 @@ padding-top: 49px;
 }
 
 .filter-item-value {
-    margin-bottom: 60px;
+    margin-bottom: 55px;
 }
 
 .value-head {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 47px;
+
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 50px;
+
+    letter-spacing: 0.6px;
 }
 
 .range-controls {
@@ -1034,7 +1079,7 @@ padding-top: 49px;
     text-transform: uppercase;
     margin: 0;
     padding: 0;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .filters ul {
@@ -1050,23 +1095,32 @@ padding-top: 49px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-bottom: 60px;
+    padding-bottom: 55px;
+    padding-top: 5px;
 }
 
 .sort-container p {
+    margin: 0;
+    padding: 0;
+
     font-size: 18px;
     line-height: 18px;
     text-transform: uppercase;
     font-weight: bold;
+}
 
-    margin: 0;
-    padding: 0;
+.sort-container a:nth-child(3) {
+    padding-right:0;
+}
+
+.sort-container a:nth-child(4) {
+    padding-left: 10px;
 }
 
 .button-container {
     display: flex;
     justify-content: space-between;
-    min-width: 300px;
+    min-width: 360px;
     flex-wrap: wrap;
 }
 
@@ -1092,7 +1146,6 @@ padding-top: 49px;
     background-color: #eeeeee;
     width: 360px;
     min-height: 231px;
-    padding-top: 35px;
     
     line-height: 18px;
     
@@ -1118,12 +1171,21 @@ padding-top: 49px;
     opacity: 1;
 }
 
+.site-name {
+    margin: 0;
+    padding: 0;
+    padding-top: 28px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
 .site-name a {
+    margin: 0;
+    padding: 0;
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
     color: #000000;
-    text-align: center;
 }
 
 .site-name a:hover,
@@ -1136,6 +1198,8 @@ padding-top: 49px;
 }
 
 .about-site {
+    margin: 0;
+    padding: 0;
     line-height: 18px;
     color: #666666;
     text-align: center;
@@ -1152,9 +1216,9 @@ padding-top: 49px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 30px;
-    margin-bottom: 60px;
-    width: 450px;
+    margin-top: 28px;
+    margin-bottom: 49px;
+    width: 443px;
 }
 
 .button-page {
@@ -1197,27 +1261,45 @@ padding-top: 49px;
     width: 260px;
 }
 
-.radio-list,
+.radio-list{
+    padding-left: 35px;
+    margin: 0;
+    padding-bottom: 45px;
+}
+
 .advantages-list {
     padding-left: 35px;
     margin: 0;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 .radiocontainer,
 .checkboxcontainer {
     display: block;
-    margin-bottom: 10px;
+}
+
+.radio-list li:nth-child(1),
+.radio-list li:nth-child(2) {
+    margin-bottom: 21px;
+}
+
+.checkboxcontainer {
+    margin-bottom: 20px;
 }
 
 .radio__box {
     position: absolute;
     margin-left: -35px;
+    margin-top: -4px;
     width: 25px;
     height: 25px;
     background-image: url("../img/radio-off.svg");
     background-repeat: no-repeat;
     opacity: 0.4;
+}
+
+.radio__text {
+    line-height: 20px;
 }
 
 .filter-input-radio:checked + .radio__box {
@@ -1256,7 +1338,10 @@ padding-top: 49px;
     opacity: 1;
 }
 
-.filter-input-checkbox:disabled + .check__box {
+.filter-input-radio:disabled + .radio__box,
+.filter-input-radio:disabled ~ .radio__text,
+.filter-input-checkbox:disabled + .check__box,
+.filter-input-checkbox:disabled ~ .check__text {
     opacity: 0.1;
 }
 
