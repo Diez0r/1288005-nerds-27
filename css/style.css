@@ -174,7 +174,7 @@ a {
     content: "";
 
     position: absolute;
-    top: 8x;
+    top: 8px;
     left: 0;
 
     width: 15px;
@@ -304,6 +304,8 @@ a {
 
 .services-list {
     display: -webkit-box;
+    flex-direction: row;
+    width: 1100px;
     display: flex;
     -webkit-box-pack: justify;
             justify-content: space-between;
@@ -352,6 +354,8 @@ a {
 
 .about-us {
     padding-top: 35px;
+    margin-left: 0;
+    margin-right: auto;
 }
 
 .nerds-bio::before {
@@ -384,7 +388,7 @@ a {
     font-size: 16px;
     line-height: 24px;
     color: #283136;
-    max-width: 616px;
+    max-width: 621px;
     margin: 0;
     margin-bottom: 38px;
 }
@@ -489,7 +493,7 @@ a {
             align-items: center;
     flex-wrap: wrap;
 
-    min-height: 180px;
+    height: 180px;
 
 }
 
@@ -512,7 +516,7 @@ a {
     content: "";
     display: block;
     width: 1160px;
-    height: 3px;
+    height: 2px;
 
     bottom: -1px;
     left: 0;
@@ -615,11 +619,14 @@ a {
 }
 
 .map-image {
-    position: relative;
     height: 416px;
     background-image: url("../img/map.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+}
+
+.map-container {
+    position: relative;
 }
 
 .find-box {
@@ -628,7 +635,7 @@ a {
     background-color: #ffffff;
     position: absolute;
     top: 54px;
-    left: 140px;
+    left: 20px;
 }
 
 .find-head {
@@ -976,9 +983,10 @@ a {
 }
 
 .button-send-message {
+    box-sizing: border-box;
     width: 260px;
     height: 50px;
-    padding: 18px 83px;
+    padding: 16px 83px;
 }
 
 .social-button:active,
