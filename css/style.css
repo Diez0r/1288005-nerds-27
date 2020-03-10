@@ -40,7 +40,7 @@ input[type="radio"].visually-hidden {
     padding: 0;
     white-space: nowrap;
     -webkit-clip-path: inset(100%);
-            clip-path: inset(100%);
+        clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
@@ -91,9 +91,9 @@ a {
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: justify;
-            justify-content: space-between;
+        justify-content: space-between;
     -webkit-box-align: center;
-            align-items: center;
+        align-items: center;
     margin-bottom: 18px;
     padding-top: 49px;
 }
@@ -118,9 +118,9 @@ a {
     display: flex;
     flex-wrap: wrap;
     -webkit-box-pack: justify;
-            justify-content: space-between;
+        justify-content: space-between;
     -webkit-box-align: center;
-            align-items: center;
+        align-items: center;
     
     font-size: 16px;
     line-height: 30px;
@@ -133,7 +133,7 @@ a {
 
 .site-navigation {
     -webkit-box-pack: center;
-            justify-content: center;
+        justify-content: center;
 }
 
 .user-navigation {
@@ -145,7 +145,7 @@ a {
     display: -webkit-box;
     display: flex;
     -webkit-box-align: center;
-            align-items: center;
+        align-items: center;
     flex-wrap: wrap;
 }
 
@@ -295,21 +295,22 @@ a {
 .services {
     display: -webkit-box;
     display: flex;
-    -webkit-box-pack: justify;
-            justify-content: flex-start;
+    -webkit-box-pack: start;
+        justify-content: flex-start;
     flex-wrap: wrap;
-
 
     margin-bottom: 59px;
 }
 
 .services-list {
     display: -webkit-box;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        flex-direction: row;
     width: 1200px;
     display: flex;
-    -webkit-box-pack: justify;
-            justify-content: flex-start;
+    -webkit-box-pack: start;
+        justify-content: flex-start;
     flex-wrap: wrap;
 
     padding-top: 80px;
@@ -347,7 +348,7 @@ a {
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: justify;
-            justify-content: space-between;
+        justify-content: space-between;
     flex-wrap: wrap;
 
     padding-top: 46px;
@@ -423,7 +424,7 @@ a {
     left: 0;
     top: 75%;
     -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+        transform: translateY(-50%);
 }
 
 .about-nerds-pic {
@@ -490,9 +491,9 @@ a {
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: center;
-            justify-content: center;
+        justify-content: center;
     -webkit-box-align: center;
-            align-items: center;
+        align-items: center;
     flex-wrap: wrap;
 
     height: 180px;
@@ -529,7 +530,7 @@ a {
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: center;
-            justify-content: center;
+        justify-content: center;
     flex-wrap: wrap;
 
     width: 290px;
@@ -566,8 +567,8 @@ a {
     top: 50%;
     
     -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
     
-            transform: translateY(-50%);
     background-color: #eeeeee;
 }
 
@@ -582,8 +583,8 @@ a {
     top: 50%;
     
     -webkit-transform: translateY(-50%);
-    
-            transform: translateY(-50%);
+        transform: translateY(-50%);
+
     background-color: #eeeeee;
 }
 
@@ -598,8 +599,8 @@ a {
     top: 50%;
     
     -webkit-transform: translateY(-50%);
-    
-            transform: translateY(-50%);
+        transform: translateY(-50%);
+
     background-color: #eeeeee;
 }
 
@@ -670,6 +671,10 @@ a {
     margin-bottom: 37px;
 }
 
+.find-tel a {
+    color: #666666;
+}
+
 .main-footer {
     display: -webkit-box;
     display: flex;
@@ -682,7 +687,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     -webkit-box-pack: justify;
-            justify-content: space-between;
+        justify-content: space-between;
 
     min-width: 260px;
     
@@ -693,9 +698,9 @@ a {
     display: -webkit-box;
     display: flex;
     -webkit-box-align: center;
-            align-items: center;
+        align-items: center;
     -webkit-box-pack: center;
-            justify-content: center;
+        justify-content: center;
     flex-wrap: wrap;
 
     width: 79px;
@@ -726,22 +731,22 @@ a {
 
     0% {
         -webkit-transform: translateY(-2000px);
-                transform: translateY(-2000px);
+            transform: translateY(-2000px);
     }
 
     70% {
         -webkit-transform: translateY(30px);
-                transform: translateY(30px);
+            transform: translateY(30px);
     }
 
     90% {
         -webkit-transform: translateY(-10px);
-                transform: translateY(-10px);
+            transform: translateY(-10px);
     }
 
     100% {
         -webkit-transform: translateY(0);
-                transform: translateY(0);
+            transform: translateY(0);
     }
 }
 
@@ -749,22 +754,22 @@ a {
 
     0% {
         -webkit-transform: translateY(-2000px);
-                transform: translateY(-2000px);
+            transform: translateY(-2000px);
     }
 
     70% {
         -webkit-transform: translateY(30px);
-                transform: translateY(30px);
+            transform: translateY(30px);
     }
 
     90% {
         -webkit-transform: translateY(-10px);
-                transform: translateY(-10px);
+            transform: translateY(-10px);
     }
 
     100% {
         -webkit-transform: translateY(0);
-                transform: translateY(0);
+            transform: translateY(0);
     }
 }
 
@@ -772,7 +777,7 @@ a {
     0%, 
     100% {
         -webkit-transform: translateX(0);
-                transform: translateX(0);
+            transform: translateX(0);
     }
 
     10%,
@@ -781,7 +786,7 @@ a {
     70%,
     90% {
         -webkit-transform: translateX(-10px);
-                transform: translateX(-10px);
+            transform: translateX(-10px);
     }
 
     20%,
@@ -789,7 +794,7 @@ a {
     60%,
     80% {
         -webkit-transform: translateX(10px);
-                transform: translateX(10px);
+            transform: translateX(10px);
     }
 }
 
@@ -797,7 +802,7 @@ a {
     0%, 
     100% {
         -webkit-transform: translateX(0);
-                transform: translateX(0);
+            transform: translateX(0);
     }
 
     10%,
@@ -806,7 +811,7 @@ a {
     70%,
     90% {
         -webkit-transform: translateX(-10px);
-                transform: translateX(-10px);
+            transform: translateX(-10px);
     }
 
     20%,
@@ -814,7 +819,7 @@ a {
     60%,
     80% {
         -webkit-transform: translateX(10px);
-                transform: translateX(10px);
+            transform: translateX(10px);
     }
 }
 
@@ -840,13 +845,12 @@ a {
     box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
 
     -webkit-animation: bounce 0.6s;
-
-            animation: bounce 0.6s;
+        animation: bounce 0.6s;
 }
 
 .message-error {
     -webkit-animation: shake 0.6s;
-            animation: shake 0.6s;
+        animation: shake 0.6s;
 }
 
 .modal-close {
@@ -886,7 +890,7 @@ a {
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: justify;
-            justify-content: space-between;
+        justify-content: space-between;
     flex-wrap: wrap;
     width: 760px;
 }
@@ -1126,7 +1130,7 @@ a {
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: justify;
-            justify-content: space-between;
+        justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 55px;
 }
@@ -1264,7 +1268,7 @@ a {
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: justify;
-            justify-content: space-between;
+        justify-content: space-between;
     flex-wrap: wrap;
     padding-bottom: 55px;
     padding-top: 5px;
@@ -1292,14 +1296,16 @@ a {
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: justify;
-            justify-content: space-between;
+        justify-content: space-between;
     min-width: 330px;
     flex-wrap: wrap;
 }
 
 .arrow-container {
+    display: -webkit-box;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        justify-content: space-between;
     min-width: 42px;
     margin-left: 48px;
 }
@@ -1309,8 +1315,9 @@ a {
     display: flex;
     flex-wrap: wrap;
     -webkit-box-pack: justify;
-            justify-content: space-between;
-            margin-bottom: 28px;
+        justify-content: space-between;
+
+    margin-bottom: 28px;
 }
 
 .catalog-item {
@@ -1396,7 +1403,7 @@ a {
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: justify;
-            justify-content: space-between;
+        justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 49px;
     width: 443px;
