@@ -25,7 +25,9 @@ link.addEventListener("click", function (evt) {
         email.focus();
     }
     else {
-    login.focus();
+        setTimeout(function() {
+            login.focus();
+        }, 1000)
     }
 
 });
