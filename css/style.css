@@ -19,6 +19,8 @@ body {
 }
 
 img {
+  max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -586,7 +588,7 @@ a {
 
 .find-box {
   width: 319px;
-  height: 308px;
+  min-height: 308px;
   background-color: #ffffff;
   position: absolute;
   top: 54px;
@@ -1318,7 +1320,7 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 49px;
-  width: 443px;
+  width: 455px;
 }
 
 .button-page {
@@ -1334,6 +1336,7 @@ a {
   background-color: #eeeeee;
   border-radius: 2px;
   margin-bottom: 10px;
+  margin-right: 10px;
 }
 
 .button-page:hover,
@@ -1355,13 +1358,14 @@ a {
 }
 
 .next-page {
-  width: 260px;
+  min-width: 260px;
+  flex-grow: 1;
 }
 
 .radio-list {
   padding-left: 35px;
   margin: 0;
-  padding-bottom: 45px;
+  padding-bottom: 24px;
 }
 
 .advantages-list {
@@ -1370,18 +1374,18 @@ a {
   padding-bottom: 30px;
 }
 
-.radio__wrap,
-.check__wrap {
-  display: block;
-}
-
-.radio-list li:nth-child(1),
+/* .radio-list li:nth-child(1),
 .radio-list li:nth-child(2) {
+  margin-bottom: 21px;
+} */
+
+.radio__wrap {
+  display: block;
   margin-bottom: 21px;
 }
 
 .check__wrap {
-  vertical-align: middle;
+  display: block;
   margin-bottom: 18px;
 }
 
