@@ -1389,7 +1389,9 @@ a {
   margin-bottom: 18px;
 }
 
-.radio__box {
+.radio__box::before {
+  content: "";
+  display: block;
   position: absolute;
   margin-left: -35px;
   margin-top: -4px;
@@ -1404,18 +1406,18 @@ a {
   line-height: 20px;
 }
 
-.filter-input-radio:checked + .radio__box {
+.filter-input-radio:checked + .radio__box::before {
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
   opacity: 0.4;
 }
 
-.filter-input-radio:hover + .radio__box,
-.filter-input-radio:focus + .radio__box {
+.filter-input-radio:hover + .radio__box::before,
+.filter-input-radio:focus + .radio__box::before {
   opacity: 1;
 }
 
-.filter-input-radio:disabled + .radio__box {
+.filter-input-radio:disabled + .radio__box::before {
   opacity: 0.1;
 }
 

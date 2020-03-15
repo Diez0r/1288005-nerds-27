@@ -44,8 +44,8 @@
                 <div class="toggle toggle-max"></div>
               </div>
               <div class="price-controls">
-                <label class="min-price">От<input type="number" id="cost_min" name="cost_min" value="0"></label>
-                <label class="max-price">До<input type="number" id="cost_max" name="cost_max" value="15000"></label>
+                <label class="min-price">От<input type="text" id="cost_min" name="cost_min" value="0"></label>
+                <label class="max-price">До<input type="text" id="cost_max" name="cost_max" value="15000"></label>
               </div>
             </div>
           </fieldset>
@@ -53,28 +53,25 @@
             <h3 class="field-head">Сетка:</h3>
             <ul class="radio-list">
               <li>
-                <label class="radio__wrap">
-                  <input class="filter-input filter-input-radio visually-hidden" type="radio" name="grid-type"
+                <div class="radio__wrap">
+                  <input class="filter-input filter-input-radio visually-hidden" type="radio" name="grid-type" id="id_adaptive"
                     value="adaptive" checked>
-                  <span class="radio__box"></span>
-                  <span class="radio__text">Адаптивная</span>
-                </label>
+                  <label class="radio__box" for="id_adaptive">Адаптивная</label>
+                </div>
               </li>
               <li>
-                <label class="radio__wrap">
-                  <input class="filter-input filter-input-radio visually-hidden" type="radio" name="grid-type"
+                <div class="radio__wrap">
+                  <input class="filter-input filter-input-radio visually-hidden" type="radio" name="grid-type" id="id_fixed"
                     value="fixed">
-                  <span class="radio__box"></span>
-                  <span class="radio__text">Фиксированная</span>
-                </label>
+                  <label class="radio__box" for="id_fixed">Фиксированная</label>
+                </div>
               </li>
               <li>
-                <label class="radio__wrap">
-                  <input class="filter-input filter-input-radio visually-hidden" type="radio" name="grid-type"
+                <div class="radio__wrap">
+                  <input class="filter-input filter-input-radio visually-hidden" type="radio" name="grid-type" id="id_flex"
                     value="flex" checked disabled>
-                  <span class="radio__box"></span>
-                  <span class="radio__text">Резиновая</span>
-                </label>
+                  <label class="radio__box" for="id_flex">Резиновая</label>
+                </div>
               </li>
             </ul>
           </fieldset>
