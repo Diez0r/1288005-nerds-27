@@ -79,41 +79,36 @@
             <h3 class="field-head">Особенности:</h3>
             <ul class="advantages-list">
               <li>
-                <label class="check__wrap">
-                  <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="slider">
-                  <span class="check__box"></span>
-                  <span class="check__text">Слайдер</span>
-                </label>
+                <div class="check__wrap">
+                  <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="slider" id="id_slider">
+                  <label class="check__box" for="id_slider">Слайдер</label>
+                </div>
               </li>
               <li>
-                <label class="check__wrap">
-                  <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="advantages">
-                  <span class="check__box"></span>
-                  <span class="check__text">Блок преимуществ</span>
-                </label>
+                <div class="check__wrap">
+                  <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="advantages" id="id_adv">
+                  <label class="check__box" for="id_adv">Блок преимуществ</label>
+                </div>
               </li>
               <li>
-                <label class="check__wrap">
-                  <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="news" checked>
-                  <span class="check__box"></span>
-                  <span class="check__text">Новости</span>
-                </label>
+                <div class="check__wrap">
+                  <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="news" id="id_news" checked>
+                  <label class="check__box" for="id_news">Новости</label>
+                </div>
               </li>
               <li>
-                <label class="check__wrap">
-                  <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="gallery"
+                <div class="check__wrap">
+                  <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="gallery" id="id_gallery"
                     disabled>
-                  <span class="check__box"></span>
-                  <span class="check__text">Галерея</span>
-                </label>
+                  <label class="check__box" for="id_gallery">Галерея</label>
+                </div>
               </li>
               <li>
-                <label class="check__wrap">
-                  <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="bin" disabled
+                <div class="check__wrap">
+                  <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="bin" id="id_bin" disabled
                     checked>
-                  <span class="check__box"></span>
-                  <span class="check__text">Корзина</span>
-                </label>
+                  <label class="check__box" id="id_bin">Корзина</label>
+                </div>
               </li>
             </ul>
             <button class="button-show" type="submit">Показать</button>
