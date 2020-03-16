@@ -1447,7 +1447,9 @@ a {
   opacity: 1;
 }
 
-.filter-input-radio:disabled ~ .radio__box,
-.filter-input-checkbox:disabled ~ .check__box {
+.filter-input-radio:disabled ~ .radio__box .radio__text,
+.filter-input-radio:disabled + .radio__box::before,
+.filter-input-checkbox:disabled ~ .check__box .check__text,
+.filter-input-checkbox:disabled + .check__box::before {
   opacity: 0.1;
 }
