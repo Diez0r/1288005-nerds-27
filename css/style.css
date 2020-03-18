@@ -180,7 +180,8 @@ a {
   color: #fb565a;
 }
 
-.site-navigation a:active {
+.site-navigation a:active,
+.user-navigation a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -581,6 +582,11 @@ a {
   background-color: #eeeeee;
 }
 
+.map-frame {
+  border: none;
+  width: 100%;
+}
+
 .map-container {
   position: relative;
 }
@@ -590,7 +596,7 @@ a {
   min-height: 308px;
   background-color: #ffffff;
   position: absolute;
-  top: 54px;
+  top: -368px;
   left: 20px;
 }
 
@@ -999,6 +1005,7 @@ a {
 
 .button-message-us {
   margin-left: 50px;
+  margin-bottom: 47px;
   padding: 16px 45px;
 }
 
@@ -1180,7 +1187,7 @@ a {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
 }
 
 .filters ul {
@@ -1275,6 +1282,10 @@ a {
 }
 
 .img-browser {
+  width: 360px;
+  height: 40px;
+  background-image: url("../img/browser.svg");
+  background-repeat: no-repeat;
   opacity: 0.12;
 }
 
@@ -1372,7 +1383,7 @@ a {
 .radio-list {
   padding-left: 35px;
   margin: 0;
-  padding-bottom: 24px;
+  padding-bottom: 29px;
 }
 
 .advantages-list {
@@ -1383,7 +1394,7 @@ a {
 
 .radio__wrap {
   display: block;
-  margin-bottom: 21px;
+  margin-bottom: 15px;
 }
 
 .check__wrap {

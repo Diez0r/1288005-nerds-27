@@ -8,13 +8,13 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap&subset=cyrillic"
     rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style_minimize.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="main-header">
     <nav class="main-navigation container">
-      <a href="index.html" class="main-header-logo">
+      <a href="index.html" class="main-header-logo" aria-label="На главную">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Нёрдс">
       </a>
       <ul class="site-navigation">
@@ -119,12 +119,12 @@
         <section class="sort-container">
           <p>Сортировать:</p>
           <div class="button-container">
-            <a href="#" class="button-sort active-sort" aria-label="Кнопка сортировки проектов по цене">По цене</a>
-            <a href="#" class="button-sort" aria-label="Кнопка сортировки проектов по типу">По типу</a>
-            <a href="#" class="button-sort" aria-label="Кнопка сортировки проектов по названию">По названию</a>
+            <a href="#" class="button-sort active-sort" aria-label="Сортировать проекты по цене">По цене</a>
+            <a href="#" class="button-sort" aria-label="Сортировать проекты по типу">По типу</a>
+            <a href="#" class="button-sort" aria-label="Сортировать проекты по названию">По названию</a>
             <div class="arrow-container">
-              <a href="#" class="button-sort active-sort" aria-label="Кнопка сортировки по убыванию">&#9660;</a>
-              <a href="#" class="button-sort" aria-label="Кнопка сортировки по возрастанию">&#9650;</a>
+              <a href="#" class="button-sort active-sort" aria-label="Сортировать по убыванию">&#9660;</a>
+              <a href="#" class="button-sort" aria-label="Сортировать по возрастанию">&#9650;</a>
             </div>
           </div>
         </section>
@@ -135,52 +135,52 @@
               <p class="about-site">Информационный сайт для&nbsp;туристов</p>
               <a class="button site-price" href="#">9 900 РУБ.</a>
             </div>
-            <img class="img-browser" src="img/browser.svg" width="360" height="40" alt="окно браузера">
+            <div class="img-browser"></div>
             <img src="img/img-sedona-jpg.jpg" width="360" height="576" alt="Макет сайта SEDONA">
           </div>
           <div class="catalog-item">
-            <img class="img-browser" src="img/browser.svg" width="360" height="40" alt="окно браузера">
+            <div class="img-browser"></div>
             <img src="img/img-pink-jpg.jpg" width="360" height="576" alt="Макет сайта PINK">
             <div class="site-description">
               <p class="site-name"><a href="#">PINK APP</a></p>
               <p class="about-site">Продуктовый лендинг приложения для iOS и Android</p>
-              <a class="button site-price" href="#">9900 РУБ.</a>
+              <a class="button site-price" href="#" aria-label="Купить макет SEDONA">9900 РУБ.</a>
             </div>
           </div>
           <div class="catalog-item">
-            <img class="img-browser" src="img/browser.svg" width="360" height="40" alt="окно браузера">
+            <div class="img-browser"></div>
             <img src="img/img-barbershop-jpg.jpg" width="360" height="576" alt="Макет сайта BARBERSHOP">
             <div class="site-description">
               <p class="site-name"><a href="#">BARBERSHOP</a></p>
               <p class="about-site">Сайт салона красоты. Для&nbsp;мужчин, да.</p>
-              <a class="button site-price" href="#">9900 РУБ.</a>
+              <a class="button site-price" href="#" aria-label="Купить макет BARBERSHOP">9900 РУБ.</a>
             </div>
           </div>
           <div class="catalog-item">
-            <img class="img-browser" src="img/browser.svg" width="360" height="40" alt="окно браузера">
+            <div class="img-browser"></div>
             <img src="img/img-mishka-jpg.jpg" width="360" height="576" alt="Макет сайта MISHKA">
             <div class="site-description">
               <p class="site-name"><a href="#">MISHKA</a></p>
               <p class="about-site">Интернет-магазин вязаных&nbsp;игрушек</p>
-              <a class="button site-price" href="#">9900 РУБ.</a>
+              <a class="button site-price" href="#" aria-label="Купить макет MISHKA">9900 РУБ.</a>
             </div>
           </div>
           <div class="catalog-item">
-            <img class="img-browser" src="img/browser.svg" width="360" height="40" alt="окно браузера">
+            <div class="img-browser"></div>
             <img src="img/img-aplus-jpg.jpg" width="360" height="576" alt="Макет сайта А ПЛЮС">
             <div class="site-description">
               <p class="site-name"><a href="#">A PLUS</a></p>
               <p class="about-site">Лендинг курсов повышения квалификации</p>
-              <a class="button site-price" href="#">9900 РУБ.</a>
+              <a class="button site-price" href="#" aria-label="Купить макет А ПЛЮС">9900 РУБ.</a>
             </div>
           </div>
           <div class="catalog-item">
-            <img class="img-browser" src="img/browser.svg" width="360" height="40" alt="окно браузера">
+            <div class="img-browser"></div>
             <img src="img/img-kvast-jpg.jpg" width="360" height="576" alt="Макет сайта КВАСТ">
             <div class="site-description">
               <p class="site-name"><a href="#">КВАСТ</a></p>
               <p class="about-site">Промо-сайт производителя крафтового кваса</p>
-              <a class="button site-price" href="#">9900 РУБ.</a>
+              <a class="button site-price" href="#" aria-label="Купить макет КВАСТ">9900 РУБ.</a>
             </div>
           </div>
         </section>
@@ -194,13 +194,14 @@
     </div>
     <section class="find-us">
       <div class="map-image">
+        <iframe class="map-frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3A95cfe59db70ecdc90c12610b0e52b20e2dc0edfc7494251a6e81f721daa70e3a&amp;source=constructor" height="416"></iframe>
         <div class="container map-container">
           <div class="find-box">
             <p class="find-head">NЁRDS DESIGN STUDIO</p>
             <p class="find-info find-address">191186, Санкт-Петербург,<br>
               ул. Б. Конюшенная, д. 19/8</p>
               <p class="find-info find-tel"><a href="tel:+78122757575" aria-label="Телефонный номер нашей студии">тел. +7 (812) 275-75-75</a></p>
-              <a class="button button-message-us" href="write_us.html" aria-label="Кнопка открытия формы обратной связи">Напишите нам</a>
+              <a class="button button-message-us" href="write_us.html" aria-label="Открыть форму обратной связи">Напишите нам</a>
           </div>
         </div>
       </div>
@@ -209,18 +210,18 @@
   <footer class="container">
     <div class="main-footer">
         <ul class="media-list">
-            <li><a class="social-button" href="#" aria-label="Кнопка перехода на нашу страницу Вконтакте">
+            <li><a class="social-button" href="#" aria-label="Ссылка перехода на нашу страницу Вконтакте">
                 <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15">
                   <path fill="#FFF"
                     d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z" />
                 </svg></a>
             </li>
-            <li><a class="social-button" href="#" aria-label="Кнопка перехода на нашу страницу Facebook">
+            <li><a class="social-button" href="#" aria-label="Ссылка перехода на нашу страницу Facebook">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
                   <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" />
                 </svg></a>
             </li>
-            <li><a class="social-button" href="#" aria-label="Кнопка перехода в наш Instagram аккаунт">
+            <li><a class="social-button" href="#" aria-label="Ссылка перехода в наш Instagram аккаунт">
                 <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -237,7 +238,7 @@
   </footer>
 
   <section class="message-us">
-    <button class="modal-close" type="button">
+    <button class="modal-close" type="button" aria-label="Закрыть модальное окно">
       <span class="visually-hidden">Закрыть</span>
     </button>
     <h2>Напишите нам</h2>
@@ -268,7 +269,7 @@
     </form>
   </section>
 
-  <script src="js/script.js"></script>
+  <script src="js/script_minimize.js"></script>
 
 </body>
 
